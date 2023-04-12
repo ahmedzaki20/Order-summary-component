@@ -1,0 +1,128 @@
+/* Global var */
+:root {
+  --primP: #e0e8ff;
+  --primBr: #3829e0;
+  --neturalP: #e0e1e9;
+  --neturalD: #7280a7;
+  --darkB: #1f2f56;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Screens size */
+/* Small screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* main css */
+section#holder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--neturalD);
+  margin: 0;
+}
+section#holder .card {
+  width: 400px;
+  text-align: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--primP);
+}
+section#holder .card .text {
+  margin: 18px;
+}
+section#holder .card .audio {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 12px;
+  width: 336px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: var(--neturalP);
+}
+section#holder .card .audio .left {
+  display: flex;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+section#holder .card .audio .left p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+}
+section#holder .card .audio .left p span:first-of-type {
+  margin-top: -6px;
+  font-weight: bold;
+}
+
+section#holder .card .audio .right {
+  margin-top: 14px;
+}
+section#holder .card .pay {
+  display: block;
+  margin: 15px auto;
+  padding: 5px 80px;
+  background-color: var(--primBr);
+  border: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  color: var(--primP);
+}
+section#holder .card .cancel {
+  display: block;
+  margin: 15px auto;
+  padding: 5px 80px;
+  border: none;
+  background-color: none;
+  background-color: var(--primP);
+}
+section#holder .card .pay:hover,
+section#holder .card .cancel:hover,
+section#holder .card .audio .right:hover {
+  cursor: pointer;
+}
