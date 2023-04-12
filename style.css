@@ -52,7 +52,8 @@ section#holder {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--neturalD);
+ background: url(./images/pattern-background-desktop.svg), #E1E9Ff;
+    background-repeat: no-repeat, no-repeat;
   margin: 0;
 }
 section#holder .card {
